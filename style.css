@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+  background-color: #eee;
+  /* border: 16px solid #D8D8D8; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.card {
+  background-color: #fff;
+  width: 360px;
+ border-radius: 16px;
+ border: none;
+ position: relative;
+}
+.description {
+  padding: 0px 24px;
+}
+.icon{
+  position: absolute;
+  top: 16px;
+  left: 304px;
+  
+}
+.description h1 {
+  font-family: DM Serif Display;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  padding-top: 32px;
+}
+.description .first_p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin-top: 24px;
+  color: #6e798c;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0em;
+  margin-top: 24px;
+  color: #a5adbb;
+}
+.price {
+  margin-top: 41px;
+  display: flex;
+  gap: 8px;
+  color: #081f32;
+  font-family: DM Serif Display;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  padding-bottom: 41px;
+}
+.original_price {
+  text-decoration: line-through;
+  color: #f8593b;
+  font-family: DM Serif Display;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+button{
+    margin-top: -10px;
+    margin-left: 29px;
+    background-color: #2ECC71;
+border-radius: 4px;
+color: #fff;
+font-family: Open Sans;
+font-size: 14px;
+font-weight: 700;
+line-height: 25px;
+letter-spacing: 0.18em;
+text-align: center;
+border: none;
+padding: 11px 30px;
+}
+button:hover{
+    background-color:#f8593b;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+.card{
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 180px;
+  gap: 40px;
+}  
+}
